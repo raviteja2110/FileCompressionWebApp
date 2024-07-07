@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>File Upload</title>
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon.png">
+    <link rel="stylesheet" href="/css/styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/js/all.min.js"></script>
+</head>
+<body>
+<div class="container">
+    <h1>Upload Your File</h1>
+    <form id="upload-form" method="post" enctype="multipart/form-data">
+        <label for="file-input" class="file-input-label">
+            <i class="fas fa-file-upload"></i> Choose a file
+        </label>
+        <input type="file" id="file-input" name="file" />
+        <div id="file-name"></div>
+        <button type="submit" id="upload-btn" disabled>
+            <i class="fas fa-upload"></i> Upload File
+        </button>
+    </form>
+    <div id="progress-container">
+        <div id="progress-bar"><div>0%</div></div>
+        <p class="message" id="progress-message">Processing...</p>
+    </div>
+    <a id="download-link" href="#" download>Download File</a>
+</div>
+
+<script src="/js/upload.js"></script>
+</body>
+</html>

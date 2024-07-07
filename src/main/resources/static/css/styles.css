@@ -1,0 +1,145 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+}
+
+.container {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    text-align: center;
+    max-width: 400px;
+    width: 100%;
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 1.5rem;
+}
+
+#upload-form {
+    margin-top: 1.5rem;
+}
+
+#file-input {
+    display: none;
+}
+
+.file-input-label {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 30px;
+    cursor: pointer;
+    margin-bottom: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.file-input-label:hover {
+    background-color: #45a049;
+}
+
+#upload-btn {
+    padding: 0.75rem 1.5rem;
+    background-color: #2196F3;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#upload-btn:hover:not(:disabled) {
+    background-color: #1e87db;
+}
+
+#upload-btn:disabled {
+    background-color: #bdbdbd;
+    cursor: not-allowed;
+}
+
+.message {
+    margin-top: 1rem;
+    color: #4CAF50;
+    font-weight: bold;
+}
+
+#file-name {
+    margin-bottom: 1rem;
+    font-style: italic;
+    color: #666;
+}
+
+#progress-container {
+    display: none;
+    margin-top: 1.5rem;
+    text-align: left;
+}
+
+#progress-bar {
+    width: 100%;
+    background-color: #e0e0e0;
+    border-radius: 30px;
+    overflow: hidden;
+    margin-bottom: 0.5rem;
+}
+
+#progress-bar div {
+    height: 24px;
+    width: 0;
+    background-color: #4CAF50;
+    text-align: center;
+    color: white;
+    line-height: 24px;
+    border-radius: 30px;
+    transition: width 0.3s ease;
+}
+
+#download-link {
+    display: none;
+    margin-top: 1.5rem;
+    padding: 0.75rem 1.5rem;
+    background-color: #2196F3;
+    color: white;
+    border-radius: 30px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#download-link:hover {
+    background-color: #1e87db;
+}
+
+/* Add these styles to the existing CSS file */
+
+#countdown {
+    font-size: 3rem;
+    font-weight: bold;
+    margin: 1rem 0;
+    color: #2196F3;
+}
+
+#loading-spinner {
+    font-size: 2rem;
+    color: #4CAF50;
+    margin: 1rem 0;
+}
+
+#back-link {
+    display: inline-block;
+    margin-top: 1rem;
+    color: #2196F3;
+    text-decoration: none;
+}
+
+#back-link:hover {
+    text-decoration: underline;
+}
